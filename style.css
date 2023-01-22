@@ -1,3 +1,8 @@
+:root {
+    --bg-color: rgb(31, 41, 55);
+    --second-color: #0084FF;
+}
+
 body {
     margin: 0;
     padding: 0;
@@ -8,18 +13,46 @@ p {
     margin: 0;
     padding: 0;
 }
+.logo {
+    font-size: 2rem;
+    font-weight: 600;
+    color: white;
+}
 header {
+    padding: 10px;
     display: grid;
     grid-template-columns: 2fr 1fr;
     align-content: center;
     padding-left: 50px;
-    height: 80px;
-    background-color: blue;
+    width: 100%;
+    backdrop-filter: blur(8px);
+    background-color: rgba(31, 41, 55, 0.6);
+    position: fixed;
+    color: white;
+    align-items: center;
 }
 .links {
     display: grid;
     grid-template-columns: 100px 100px 100px;
 }
+.link {
+    font-size: 1.1rem;
+    cursor: pointer;
+}
+.link::after {
+    content: '';
+    display: block;
+    height: 2px;
+    width: 0%;
+    background-color: white;
+    transition: all 0.4s ease-in-out;
+}
+.link:hover::after {
+    width: 60%;
+    height: 2px;
+    background-color: var(--second-color);
+}
+
 .hero-section {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -27,7 +60,8 @@ header {
     align-items: center;
     justify-items: center;
     height: 80vh;
-    background-color: rgb(255, 74, 74);
+    background-color: var(--bg-color);
+    width: 100%;
 }
 .text-content {
     padding-left: 150px;
@@ -43,8 +77,20 @@ header {
     font-size: 1rem;
     color: white;
 }
-.cta-btn {
+.cta-btn, .view {
     justify-self: start;
+    padding: 10px 30px;
+    font-size: 1.1rem;
+    background-color: var(--second-color);
+    border: none;
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.4s ease-in-out;
+}
+.cta-btn:hover, .buy:hover, .view:hover {
+    box-shadow: 0 0 25px var(--second-color);
+    transform: translateY(-1.111rem);
 }
 .doge {
     width:  400px;
@@ -56,32 +102,42 @@ header {
 .store {
     margin-top: 50px;
     height: 500px;
-    background-color: darkgoldenrod;
+    margin-bottom: 10rem;
 }
 .store-heading {
-    color: black;
+    color: var(--bg-color);
     font-size: 2.5rem;
     font-weight: 600;
     text-align: center;
+    margin-bottom: 5rem;
 }
 .merch-img {
-    width: 18rem;
+    width: 15rem;
 }
 .merch-cards {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     align-items: center;
     justify-items: center;
 }
+
 .card {
     padding: 30px;
+    transition: all 0.4s ease-in-out;
+    cursor: pointer;
+    border-radius: 20px;
+}
+.card:hover {
+    box-shadow: 0 0 50px rgba(0 ,0, 0, 0.3);
 }
 .card-title {
     font-size: 0.8rem;
     margin-top: 25px;
+    color: black;
 }
 .seller {
     font-size: 0.7rem;
+    color: rgb(65, 65, 65);
 }
 .price {
     font-size: 1.2rem;
@@ -94,7 +150,15 @@ header {
 }
 .buy {
     align-self: end;
+    padding: 8px 10px;
+    background-color: var(--second-color);
+    border: none;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.4s ease-in-out;
 }
+
 .quote {
     display: grid;
     place-content: center;
@@ -114,11 +178,53 @@ header {
 }
 .cta {
     margin-top: 50px;
-    height: 175px;
-    background-color: midnightblue;
+    padding: 5rem;
+    background-color: var(--second-color);
+    display: grid;
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+}
+.cta-heading {
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: white;
+    margin-bottom: 1.5rem;
+}
+.cta-para {
+    width: 400px;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    color: white;
+    margin-bottom: 1.5rem;
+}
+.form {
+    
+}
+.input {
+    padding-top:    10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 150px;
+    border-radius: 8px;
+    border: none;
+}
+.newsletter {
+    padding: 11px 10px;
+    border: none;
+    background-color: white;
+    color: var(--bg-color);
+    border-radius: 8px;
+    cursor: pointer;
 }
 footer {
-    height: 270px;
     margin-top: 50px;
-    background-color: black;
+    background-color: var(--bg-color);
+    color: white;
+    padding: 70px;
+    text-align: center;
+    
+}
+.footer-link {
+    color: white;
 }
