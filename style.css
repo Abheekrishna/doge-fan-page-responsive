@@ -65,7 +65,7 @@ header {
     text-align: center;
 }
 .merch-img {
-    width: 20rem;
+    width: 18rem;
 }
 .merch-cards {
     display: grid;
@@ -74,14 +74,43 @@ header {
     justify-items: center;
 }
 .card {
-    background-color: rebeccapurple;
-    align-self: center;
-    justify-self: center;
+    padding: 30px;
+}
+.card-title {
+    font-size: 0.8rem;
+    margin-top: 25px;
+}
+.seller {
+    font-size: 0.7rem;
+}
+.price {
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+.product-details {
+    display: grid;
+    grid-template-columns: 1fr 80px;
+    grid-column-gap: 10px;
+}
+.buy {
+    align-self: end;
 }
 .quote {
+    display: grid;
+    place-content: center;
     margin-top: 50px;
     height: 250px;
-    background-color: lime;
+    background-color: #E7E7E7;
+}
+.quote-text {
+    width: 350px;
+    font-weight: 200;
+    font-size: 1.2rem;
+    text-align: center;
+}
+.author {
+    font-weight: 600;
+    text-align: right;
 }
 .cta {
     margin-top: 50px;
