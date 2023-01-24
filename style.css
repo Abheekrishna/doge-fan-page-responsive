@@ -271,7 +271,7 @@ footer {
         margin: 0;
     }
     .merch-cards {
-        padding: 10px 5px;
+        padding: 10px 10px;
         grid-template-columns: 1fr 1fr;
     }
     .merch-img {
