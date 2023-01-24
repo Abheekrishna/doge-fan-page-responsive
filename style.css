@@ -31,6 +31,10 @@ header {
     color: white;
     align-items: center;
 }
+.fa-bars {
+    margin-left: 50px;
+    display: none;
+}
 .links {
     display: grid;
     grid-template-columns: 100px 100px 100px;
@@ -38,6 +42,7 @@ header {
 .link {
     font-size: 1.1rem;
     cursor: pointer;
+   
 }
 .link::after {
     content: '';
@@ -59,7 +64,7 @@ header {
     grid-column-gap: 50px;
     align-items: center;
     justify-items: center;
-    height: 80vh;
+    padding: 8rem 0;
     background-color: var(--bg-color);
     width: 100%;
 }
@@ -119,6 +124,8 @@ header {
     grid-template-columns: 1fr 1fr 1fr 1fr;
     align-items: center;
     justify-items: center;
+    padding: 50px;
+    background-color: white;
 }
 
 .card {
@@ -227,4 +234,33 @@ footer {
 }
 .footer-link {
     color: white;
+}
+
+@media (max-width: 768px) {
+    header {
+        grid-template-columns: 2fr 1fr;
+    }
+    .links {
+        display: grid;
+        width: 100%;
+        grid-template-columns: 100px;
+        place-content: center;
+        grid-template-rows: repeat(3, 50px);
+    }
+    .links {
+        display: none;
+    }
+    .links.active {
+        display: grid;
+    }
+    .fa-bars {
+        display: flex;
+        margin-left: 100px;
+    }
+    .hero-section {
+        grid-template-columns: 1fr;
+    }
+    .merch-cards {
+        grid-template-columns: 1fr 1fr;
+    }
 }
