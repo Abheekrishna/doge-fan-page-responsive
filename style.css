@@ -129,6 +129,10 @@ header {
 }
 
 .card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     padding: 30px;
     transition: all 0.4s ease-in-out;
     cursor: pointer;
@@ -149,21 +153,6 @@ header {
 .price {
     font-size: 1.2rem;
     font-weight: 600;
-}
-.product-details {
-    display: grid;
-    grid-template-columns: 1fr 80px;
-    grid-column-gap: 10px;
-}
-.buy {
-    align-self: end;
-    padding: 8px 10px;
-    background-color: var(--second-color);
-    border: none;
-    color: white;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: all 0.4s ease-in-out;
 }
 
 .quote {
@@ -257,10 +246,33 @@ footer {
         display: flex;
         margin-left: 100px;
     }
+
+
     .hero-section {
         grid-template-columns: 1fr;
     }
+    .text-content {
+        padding: 0 50px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 30px;
+    }
+    .store-heading {
+        margin: 0;
+    }
     .merch-cards {
+        padding: 10px 5px;
         grid-template-columns: 1fr 1fr;
+    }
+    .merch-img {
+        align-items: center;
+        width: 10rem;
+    }
+    .quote {
+        margin-top: 250px;
+    }
+    .card {
+        align-items: center;
     }
 }
