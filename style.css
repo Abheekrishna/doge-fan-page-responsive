@@ -159,7 +159,7 @@ header {
     display: grid;
     place-content: center;
     margin-top: 50px;
-    height: 250px;
+    padding: 35px;
     background-color: #E7E7E7;
 }
 .quote-text {
@@ -193,9 +193,6 @@ header {
     line-height: 1.5rem;
     color: white;
     margin-bottom: 1.5rem;
-}
-.form {
-    
 }
 .input {
     padding-top:    10px;
@@ -261,10 +258,10 @@ footer {
     }
 
     .doge {
-        width:  300px;
-        height: 300px;
+        width:  240px;
+        height: 240px;
         object-fit: cover;
-        border-radius: 60px;
+        border-radius: 40px;
         border: 8px solid white;
     }
 
@@ -273,6 +270,7 @@ footer {
     }
     .card {
         padding: 10px 10px;
+        margin-top: 50px;
     }
     .card-title {
         width: 150px;
@@ -286,9 +284,28 @@ footer {
         width: 10rem;
     }
     .quote {
-        margin-top: 250px;
+        padding: 20px;
+        margin-top: 300px;
     }
-    .card {
+    .quote-text {
+        font-size: 1rem;
+    }
+    .author {
+        text-align: center;
+    }
+    .cta-text-content {
+        display: flex;
+        flex-direction: column;
+    }
+    .form {
+        display: flex;
+        flex-direction: column;
         align-items: center;
+    }
+    .newsletter {
+        margin-top: 15px;
+    }
+    .cta-para {
+        width: 300px;
     }
 }
