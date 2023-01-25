@@ -2,6 +2,13 @@
     --bg-color: rgb(31, 41, 55);
     --second-color: #0084FF;
 }
+html, body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
 
 body {
     margin: 0;
