@@ -229,6 +229,8 @@ footer {
     color: white;
 }
 
+
+/* MOBILE */
 @media (max-width: 768px) {
     header {
         grid-template-columns: 2fr 250px;
@@ -314,5 +316,64 @@ footer {
     }
     .cta-para {
         width: 300px;
+    }
+}
+
+/* TABLET */
+@media (max-width: 1024px) {
+    header {
+        grid-template-columns: 2fr 250px;
+    }
+    .links {
+        display: grid;
+        width: 100%;
+        grid-template-columns: 100px;
+        place-content: center;
+        grid-template-rows: repeat(3, 50px);
+        margin-top: 30px;
+    }
+    .links {
+        display: none;
+    }
+    .links.active {
+        display: grid;
+    }
+    .fa-bars {
+        display: flex;
+        margin-left: 100px;
+    }
+
+
+    .store {
+        margin-bottom: 0;
+    }
+    .store-heading {
+        margin: 0;
+    }
+    .card {
+        padding: 10px 10px;
+        margin-top: 50px;
+    }
+    .card-title {
+        width: 150px;
+    }
+    .merch-cards {
+        padding: 10px 10px;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+    .merch-img {
+        align-items: center;
+        width: 12rem;
+    }
+
+    .quote {
+        padding: 20px;
+        margin-top: 0;
+    }
+    .quote-text {
+        font-size: 1rem;
+    }
+    .author {
+        text-align: center;
     }
 }
